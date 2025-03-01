@@ -40,6 +40,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+
       <nav className="flex flex-wrap justify-between space-x-4 bg-pink-900 border-t border-white p-4">
         <a href="#" className="text-sm flex gap-2 items-center">
           All Categories <GiHamburgerMenu />

@@ -2,6 +2,7 @@ import { LuClock8 } from "react-icons/lu";
 import { ProductProps } from ".";
 
 const ProductCard: React.FC<ProductProps> = ({
+  image,
   name,
   price,
   oldPrice,
@@ -11,7 +12,9 @@ const ProductCard: React.FC<ProductProps> = ({
 }) => {
   return (
     <div className=" p-4 rounded-sm bg-white">
-      <div className="h-40 bg-gray-200 mb-2"></div>
+      <div className="h-72 bg-gray-200 mb-2">
+        <img src={image} alt="product images" className="w-full h-72" />
+      </div>
       <h3 className="font-bold">{name}</h3>
       <div className="flex items-center space-x-2 justify-between m-2 mb-10">
         <span className="font-bold">{price}</span>
